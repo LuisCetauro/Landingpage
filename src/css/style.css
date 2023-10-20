@@ -1,0 +1,310 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"OpenSans";
+}
+html,body{
+    height:100%;
+}
+
+
+@font-face{
+    src:url('../font/OpenSans-Light.ttf');
+    font-family:"OpenSans";
+}
+.center{
+    width:100%;
+    margin:0 auto;
+    max-width:1280px;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    background-color: #757272;
+    text-align:center;
+}
+footer {
+    background-color: #757272;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 7%;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+.footer p{
+    margin-left:40%;
+}
+.header img{
+       margin:10px;
+       margin-left:-80%;
+       width:80px;    
+}
+.footer img{
+        width:80px;
+        height:70px;
+        margin-left:600px;      
+}
+
+.container-banner{
+    width:100%;
+    height:100%;
+    background-image:url('../img/header_bg.jpg');
+    background-size:100% 100%;
+    background-position:center;
+}
+.container-banner > .center{
+    height:100%;
+    
+}
+.form{
+    padding:17px;
+    width:400px;
+    height:calc(100% + 30px);
+    float:right;
+    position:relative;
+    top:-15px;
+    border:6px solid #CCC;
+    background-color:white;
+}
+
+#form1{
+    display:none;
+}
+.form h2{
+    font-weight:normal;
+    color:#999999;
+    font-size:21px;
+}
+
+.input-container{
+    margin-top:20px;    
+}
+.input-container span,.form p{
+    display:inline-block;
+    width:100%;
+    color:#BBBBBB;
+    font-size:17px;
+    font-weight:bold;
+}
+
+.form p{
+    margin:20px 0;
+}
+
+.end_form{
+    color:black;
+}
+
+.spacer{
+    padding:20%;
+}
+.input-container input[type=text]{
+    margin-top:9px;
+    width:344px;
+    height:55px;
+    border:1px solid #ccc;
+}
+.form .center-button{
+    text-align:center;    
+}
+.form input[type=submit]{
+    border:0;
+    color:white;
+    font-size:25px;
+    width:280px;
+    height: 56px;
+    display:inline-block;
+    background-color:#363A6D;
+    cursor:pointer;
+}
+
+.botao {
+    border: 0;
+    color: white;
+    font-size: 20px;
+    width: 280px;
+    height: 56px;
+    display: inline-block;
+    background-color: #363A6D;
+    cursor: pointer;
+    text-align:center;
+    margin-left:10%;
+    margin-top:60%;
+}
+.frame{
+    height:70%;
+}
+
+.info {
+    color:white;
+    padding: 30px;
+    margin-top: 40px;
+    float: left;
+    width: 30%;
+    height: 50%;
+    background-color: rgba(33,35,67,0.7);
+}
+
+.info ul{
+    list-style-position: inside;
+}
+
+.info ul li{
+    margin-top:18px;
+}
+.phrase{
+    position:relative;
+    left:60%;
+    top:75%;
+    font-size:14px;
+}
+.phrase_fn{
+    font-style:italic;
+    font-size:10px;
+}
+
+.container2{
+    padding:40px 0;
+    background-color:#DDDDDD;
+    text-align:center;
+}
+
+.container2 h2{
+    font-weight:normal;
+}
+
+.container2 p{
+    width:100%;
+    max-width: 768px;
+    margin: 15px 0;
+    display:inline-block;
+    text-align:justify;
+}
+
+.sec1{
+    padding:90px 0;
+}
+
+.sec1 h2{
+    text-align:center;
+    color:#462663;
+    font-weight:normal;
+}
+
+.container-sec{
+    margin-top:40px;
+    text-align:center;
+}
+
+.single{
+    float:left;
+    width:33.33%;
+    padding:30px;
+}
+
+.icon{
+    width:20%;
+    margin:30px;
+}
+
+
+
+@media screen and (min-width: 1001px) and (max-width:1560px) {
+    .header {
+        width: 1080px;
+        height: 8%;
+    }
+        .header img {
+            width:180px;
+        }
+
+    .container-banner {
+        width: 1080px;
+        height: 1000px;
+    }
+
+    .form {
+        width: 500px;
+        position: relative;
+        right: 0%;
+    }
+
+    .info {
+        width: 50%;
+        height: 60%;
+        font-size: 30px;
+    }
+
+    .phrase {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        font-style: italic;
+        font-size: 10px;
+        width: 300px;
+    }
+
+    .frame {
+        height: 50%;
+    }
+
+    .container2 {
+        width: 1080px;
+    }
+
+    .sec1 {
+        width: 1080px;
+    }
+
+
+
+    .footer p {
+        font-size: 26px;
+        position: absolute;
+        left: -15%;
+    }
+    .footer img{
+        margin-left:80%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .header {
+        width: 980px;
+        height: 8%;
+    }
+        .header img {
+            width: 150px;
+        }
+
+    .container-banner {
+        width: 980px;
+        height: 1000px;
+    }
+    .container2 {
+        width: 980px;
+    }
+    .frame {
+        height: 60%;
+    }
+
+    
+    .sec1 {
+        width: 980px;
+    }
+
+   
+    .footer p {
+        font-size: 26px;
+        position: absolute;
+        left: -15%;
+    }
+
+    .footer img {
+        margin-left: 80%;
+    }
+}
